@@ -18,9 +18,8 @@ public class SQL_Database extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase database) {
-        String query = "CREATE TABLE customerTable ( First TEXT, Last TEXT, Email TEXT, ID INTEGER PRIMARY KEY, Date TEXT, Phone TEXT, Zip INTEGER)";
+        String query = "CREATE TABLE Table_1 ( First TEXT, Last TEXT, Email TEXT, ID INTEGER PRIMARY KEY, Date TEXT, Phone TEXT, Zip INTEGER)";
         database.execSQL(query);
-        onCreate(database);
     }
 
     @Override

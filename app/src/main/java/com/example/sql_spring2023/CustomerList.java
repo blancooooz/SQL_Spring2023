@@ -53,4 +53,15 @@ public class CustomerList extends ListActivity {
 setListAdapter(adapter);
         }
     }
+
+    public void showAddCustomer(View view){
+        Intent theIntent = new Intent(getApplication(),AddCustomer.class);
+        startActivity(theIntent);
+    }
+
+    public void showExitToMain(View view){
+        Intent theIntent = new Intent(getApplication(),MainActivity.class);
+        startActivity(theIntent);
+    }
+
 }
